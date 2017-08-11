@@ -39,4 +39,5 @@
 # Ignore application configuration
 /config/application.yml
 /config/s3.yml
+/config/database.yml
 .DS_store
