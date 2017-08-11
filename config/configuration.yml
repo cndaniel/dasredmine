@@ -43,8 +43,8 @@ default:
       port: 587
       authentication: :plain
       domain: "redmine.watfaq.com"
-      user_name: postmaster@redmine.watfaq.com
-      password: 92959d7a58a3a7a686eb79c1e3ad6adc
+      user_name: <%= ENV['mailgun_user'] %>
+      password: <%= ENV['mailgun_secret'] %>
   # ==== SMTP server at using TLS (GMail)
   # This might require some additional configuration. See the guides at:
   # http://www.redmine.org/projects/redmine/wiki/EmailConfiguration
